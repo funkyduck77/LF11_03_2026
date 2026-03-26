@@ -21,6 +21,7 @@ public class Kinosaal {
 //                Schleifen.
 //        4. Zusatz: Gib am Ende aus, wie viele Sitze insgesamt im Kino vorhanden sind (nutze kino.length und kino[0].length).
 
+        // Var initialisieren
         int kino[][] = new int[3][4];
 
         // Array nullen
