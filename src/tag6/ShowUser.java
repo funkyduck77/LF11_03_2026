@@ -14,6 +14,14 @@ public class ShowUser {
 
         // Methode aufrufen
         user2.ausgeben();
+
+        // Objekt Moderator
+        Moderator mod = new Moderator("Mod-Peter", 195, true);
+        mod.ausgeben();
+
+        // Objekt Gast
+        Gast gast = new Gast("Gast-Jens", 7);
+        gast.ausgeben();
     }
 }
 

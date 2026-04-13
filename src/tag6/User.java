@@ -9,13 +9,22 @@ public class User {
         this.username = username;
         this.beitragsAnzahl = beitragsAnzahl;
     }
-    //Konstruktor A
+
+    //Konstruktor B
     public User() {
         this.username = "unbekannter User";
         this.beitragsAnzahl = 0;
     }
 
-    public void ausgeben() {
-        System.out.println("Benutzer: " + this.username + " Beiträge: " + this.beitragsAnzahl);
+    //Konstruktor C
+    public User(String username) {
+        this.username = username;
+        this.beitragsAnzahl = 0;
     }
+
+    public void ausgeben() {
+        System.out.print("\n Benutzer: " + this.username + " Beiträge: " + this.beitragsAnzahl);
+
+    }
+
 }
