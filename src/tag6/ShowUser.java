@@ -17,6 +17,7 @@ public class ShowUser {
 
         // Objekt Moderator
         Moderator mod = new Moderator("Mod-Peter", 195, true);
+        mod.setBeitragsAnzahl(200);
         mod.ausgeben();
 
         // Objekt Gast
