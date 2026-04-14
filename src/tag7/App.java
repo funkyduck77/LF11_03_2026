@@ -29,5 +29,15 @@ public class App {
         auto1.reifenWechseln();
         auto1.reifenWechseln("Sommerreifen");
 
+
+        // ToString Demo
+        Fahrzeug meintoStringFahrzeug = new Fahrzeug();
+        meintoStringFahrzeug.setBaujahr(2016);
+        IO.println(meintoStringFahrzeug);
+
+        auto1.setAnzahlTueren(4);
+        auto1.setBaujahr(2020);
+        IO.println("Auto: " + auto1);
+
     }
 }
