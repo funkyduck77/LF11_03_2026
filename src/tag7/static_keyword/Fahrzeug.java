@@ -21,6 +21,7 @@ public class Fahrzeug {
         return "Baujahr: " + baujahr;
     }
 
+    // statische Methode für statische Attribute!
     public static int getAnzahlFahrzeuge() {
         return anzahlFahrzeuge;
     }
