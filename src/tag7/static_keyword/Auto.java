@@ -1,8 +1,13 @@
-package tag7;
+package tag7.static_keyword;
 
 public class Auto extends Fahrzeug {
 
     private int anzahlTueren;
+
+    public Auto(int baujahr, int anzahlTueren) {
+        super(baujahr); // ruft den Elternkonstruktor auf und sorgt dadurch dafür, dass der Zähler weiter hochgeht wie gewollt
+        this.anzahlTueren = anzahlTueren;
+    }
 
 
     // Annotation, die zeigt, dass eine Methode hier überschrieben wurde

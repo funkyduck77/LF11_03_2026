@@ -1,0 +1,17 @@
+-- Skript in DB ausführen
+
+-- Tabelle neu anlegen
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT, -- Automatische Hochzählung
+  `name` varchar(100) NOT NULL,
+  `password` varchar(100) DEFAULT '"Ich bin ein Passwort"',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Daten einfügen ohne manuelle ID-Vergabe
+-- Die Datenbank weist nun automatisch 1, 2, 3... zu
+INSERT INTO `users` (`name`, `password`) VALUES
+    ('Raphaela', '"Ich bin ein Passwort"'),
+    ('Melina', 'Passwort1'),
+    ('Peter', 'SicheresPasswort');
