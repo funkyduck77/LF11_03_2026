@@ -7,22 +7,28 @@ public class ShowUser {
         User user1 = new User("max_power", 5);
 
         // Methode aufrufen
-        user1.ausgeben();
+//        user1.ausgeben();
 
         // Zweites Objekt erstellen (Konstruktor B)
         User user2 = new User();
 
         // Methode aufrufen
-        user2.ausgeben();
+//        user2.ausgeben();
+
+        IO.println(user1.toString());
+
+
 
         // Objekt Moderator
         Moderator mod = new Moderator("Mod-Peter", 195, true);
         mod.setBeitragsAnzahl(200);
-        mod.ausgeben();
+//        mod.ausgeben();
+        IO.println(mod);
 
         // Objekt Gast
         Gast gast = new Gast("Gast-Jens", 7);
-        gast.ausgeben();
+//        gast.ausgeben();
+        IO.println(gast);
     }
 }
 

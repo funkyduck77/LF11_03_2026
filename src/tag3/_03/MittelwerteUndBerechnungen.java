@@ -7,11 +7,10 @@ public class MittelwerteUndBerechnungen {
     static void main() {
 
         int benoetigteWerte = 6;
-
         int zahlen[];
         zahlen = new int[6];
 
-        while (benoetigteWerte > 0){
+        while (benoetigteWerte > 0) {
             String zahlenjOption = JOptionPane.showInputDialog("Gib eine Zahl ein [noch benötigte Werte: " + benoetigteWerte + " ]: ");
             int zahlFuerArray = Integer.parseInt(zahlenjOption);
             --benoetigteWerte;
@@ -36,6 +35,6 @@ public class MittelwerteUndBerechnungen {
         IO.println("Summe: " + summe);
 
         // Durchschnitt ausgeben
-        IO.println("Durchschnitt (Summe " + summe + " / Anzahl der Werte " + zahlen.length +  " ): " + durchschnitt);
+        IO.println("Durchschnitt (Summe " + summe + " / Anzahl der Werte " + zahlen.length + " ): " + durchschnitt);
     }
 }

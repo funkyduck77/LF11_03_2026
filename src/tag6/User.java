@@ -37,9 +37,14 @@ public class User {
         this.beitragsAnzahl = 0;
     }
 
-    public void ausgeben() {
-        System.out.print("\n Benutzer: " + this.username + " Beiträge: " + this.beitragsAnzahl);
-
+    // String toString
+    @Override
+    public String toString() {
+        return "User: " + username + " |  Beiträge: " + beitragsAnzahl;
     }
+
+//    public void ausgeben() {
+//        System.out.print("\n Benutzer: " + this.username + " Beiträge: " + this.beitragsAnzahl);
+//    }
 
 }

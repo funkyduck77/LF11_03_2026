@@ -8,10 +8,14 @@ public class Gast extends User {
         super(username);
         this.tageGueltig = tageGueltig;
     }
-    public void ausgeben() {
-        super.ausgeben();
-        System.out.print(" Gastkonto : " + this.tageGueltig + " Tage gültig.");
-    }
-    ;
+//    public void ausgeben() {
+////        super.ausgeben();
+//        System.out.print(" Gastkonto : " + this.tageGueltig + " Tage gültig.");
+//    }
 
+
+    @Override
+    public String toString() {
+        return super.toString() + " Gastkonto : " + this.tageGueltig + " Tage gültig.";
+    }
 }

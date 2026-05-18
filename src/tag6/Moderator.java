@@ -8,8 +8,14 @@ public class Moderator extends User {
         super(username,beitragsAnzahl);
         this.superModerator = superModerator;
     }
-    public void ausgeben() {
-        super.ausgeben();
-        System.out.print(" Mod: " + this.superModerator);
+//    public void ausgeben() {
+////        super.ausgeben();
+//        System.out.print(" Mod: " + this.superModerator);
+//    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "Moderator{" + "superModerator=" + superModerator + "}";
     }
 }
